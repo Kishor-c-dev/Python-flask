@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<body>
+    <h3>Students</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone No</th>
+            <th>Address</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.student_name }}</td>
+            <td>{{ student.phone_number }}</td>
+            <td>{{ student.address }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/add-new-student/">Add New Student</a>
+</body>
+
+</html>
